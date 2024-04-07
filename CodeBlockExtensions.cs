@@ -42,7 +42,7 @@ internal static class CodeBlockExtensions
                 foreach (var p in result.Properties)
                 {
                     w.WriteLine($"""
-                output.Add("{p}", TagNumber);
+                output.Add("{p}", {p});
                 """);
                 }
                 w.WriteLine("return output;");
