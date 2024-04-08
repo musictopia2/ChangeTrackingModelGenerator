@@ -1,7 +1,5 @@
-﻿using ChangeTrackingModelGenerator;
-
-namespace ChangeTrackingModelGenerator;
-internal class EmitClass(BasicList<ResultsModel> results, SourceProductionContext context)
+﻿namespace ChangeTrackingModelGenerator;
+internal class EmitClass(ImmutableArray<ResultsModel> results, SourceProductionContext context)
 {
     public void Emit()
     {
